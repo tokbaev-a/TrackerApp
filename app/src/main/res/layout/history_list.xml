@@ -7,16 +7,10 @@
     <LinearLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="133dp"
         android:layout_margin="16dp"
         android:background="@drawable/history_fragment_background"
         android:orientation="horizontal">
-
-        <ImageView
-            android:id="@+id/map_screen_iv_item"
-            android:layout_width="240dp"
-            android:layout_height="200dp"
-            android:layout_margin="16dp" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -27,73 +21,69 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:layout_alignParentRight="true"
-                android:layout_marginRight="16dp"
-                android:layout_marginTop="10dp"
-                android:text="00/00/00"
-                android:textSize="21sp" />
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="20dp"
+                android:text="00:00:00"
+                android:textColor="#8a4be3"
+                android:textSize="25sp" />
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_marginTop="33dp"
-                    android:layout_marginRight="90dp"
-                    android:layout_alignTop="@id/time_tv_item"
-                    android:layout_alignParentRight="true"
-                    android:src="@drawable/ic_baseline_directions_run_24" />
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignTop="@id/date_tv_item"
+                android:layout_marginLeft="147dp"
+                android:layout_marginTop="61dp"
+                android:src="@drawable/ic_baseline_directions_run_24" />
 
-                <TextView
-                    android:id="@+id/speed_tv_item"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_alignTop="@id/time_tv_item"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginRight="16dp"
-                    android:text="10 km/h"
-                    android:textSize="18sp" />
+            <TextView
+                android:id="@+id/speed_tv_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/date_tv_item"
+                android:layout_marginLeft="175dp"
+                android:layout_marginTop="60dp"
+                android:text="10 km/h"
+                android:textSize="20sp" />
 
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_marginTop="130dp"
-                    android:layout_marginRight="90dp"
-                    android:layout_alignTop="@id/date_tv_item"
-                    android:layout_alignParentRight="true"
-                    android:src="@drawable/ic_baseline_timer_24" />
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignTop="@id/date_tv_item"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="61dp"
+                android:src="@drawable/ic_baseline_timer_24" />
 
-                <TextView
-                    android:id="@+id/time_tv_item"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignTop="@id/date_tv_item"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginTop="130dp"
-                    android:layout_marginRight="16dp"
-                    android:text="00:00:00"
-                    android:textSize="17sp" />
+            <TextView
+                android:id="@+id/time_tv_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/date_tv_item"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="47dp"
+                android:layout_marginTop="60dp"
+                android:text="00:00:00"
+                android:textSize="20sp" />
 
-                <ImageView
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_marginTop="33dp"
-                    android:layout_marginRight="90dp"
-                    android:layout_alignTop="@id/speed_tv_item"
-                    android:layout_alignParentRight="true"
-                    android:src="@drawable/ic_baseline_swap_calls_24" />
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignTop="@id/date_tv_item"
+                android:layout_marginLeft="265dp"
+                android:layout_marginTop="61dp"
+                android:src="@drawable/ic_baseline_swap_calls_24" />
 
-                <TextView
-                    android:id="@+id/distance_tv_item"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center_vertical"
-                    android:layout_alignTop="@id/speed_tv_item"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginRight="33dp"
-                    android:text="10 km"
-                    android:textSize="18sp" />
+            <TextView
+                android:id="@+id/distance_tv_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/date_tv_item"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="292dp"
+                android:layout_marginTop="60dp"
+                android:text="10 km"
+                android:textSize="20sp" />
 
         </RelativeLayout>
 

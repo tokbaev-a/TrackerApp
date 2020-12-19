@@ -10,40 +10,43 @@
 
         <com.google.android.gms.maps.MapView
             android:id="@+id/mapView"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
 
-        <Button
-            android:id="@+id/start_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_margin="16dp"
-            android:background="@drawable/start_button"
-            android:text="Start"
-            android:textColor="@android:color/white" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            android:background="#FFFF">
 
-        <Button
-            android:id="@+id/stop_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_margin="16dp"
-            android:background="@drawable/start_button"
-            android:text="Stop"
-            android:textColor="@android:color/white"
-            android:visibility="gone" />
+            <Button
+                android:id="@+id/start_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/start_button"
+                android:text="Start"
+                android:textColor="@android:color/white" />
 
-        <TextView
-            android:id="@+id/time_indicator"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_marginBottom="16dp"
-            android:layout_marginRight="55dp"
-            android:text="00:00:00"
-            android:textSize="40sp" />
+            <Button
+                android:id="@+id/stop_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/start_button"
+                android:text="Stop"
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+
+            <Chronometer
+                android:id="@+id/time_indicator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="10dp"
+                android:textSize="40sp" />
+        </LinearLayout>
     </RelativeLayout>
 
 </FrameLayout>
