@@ -45,7 +45,7 @@ import knigh4ttk.application.trackerapp.Item.Item;
 import knigh4ttk.application.trackerapp.R;
 
 public class RunFragment extends Fragment implements OnMapReadyCallback, RunContract.View {
-    private static final int TAG_CODE_PERMISSION_LOCATION = 1;
+    private static final int TAG_CODE_PERMISSION_LOCATION = 0;
     ArrayList<Location> locations = new ArrayList<>();
     FusedLocationProviderClient client;
     Task<Location> locationTask;
@@ -94,6 +94,7 @@ public class RunFragment extends Fragment implements OnMapReadyCallback, RunCont
         startButton.setVisibility(View.VISIBLE);
         stopButton = view.findViewById(R.id.stop_button);
         stopButton.setVisibility(View.GONE);
+        chronometer.setVisibility(View.VISIBLE);
         startButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -188,6 +189,7 @@ public class RunFragment extends Fragment implements OnMapReadyCallback, RunCont
     private void finishChronometer() {
         startButton.setText("Start");
         stopButton.setVisibility(View.GONE);
+        chronometer.setVisibility(View.VISIBLE);
         stopButton.setText("Stop");
         @SuppressLint("SimpleDateFormat") SimpleDateFormat formatter = new SimpleDateFormat("dd MMM yyyy");
         Date date = new Date();
@@ -231,9 +233,9 @@ public class RunFragment extends Fragment implements OnMapReadyCallback, RunCont
         } else {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
                 ActivityCompat.requestPermissions(Objects.requireNonNull(getActivity()), new String[]{
-                                Manifest.permission.ACCESS_BACKGROUND_LOCATION,
-                                Manifest.permission.ACCESS_FINE_LOCATION,
-                                Manifest.permission.ACCESS_COARSE_LOCATION},
+                        Manifest.permission.ACCESS_BACKGROUND_LOCATION,
+                        Manifest.permission.ACCESS_FINE_LOCATION,
+                        Manifest.permission.ACCESS_COARSE_LOCATION},
                         TAG_CODE_PERMISSION_LOCATION);
             }
         }
